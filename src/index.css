@@ -1,0 +1,119 @@
+/* === Google Fonts Import === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap');
+
+/* === CSS Variables === */
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-mono: 'Fira Code', 'SF Mono', 'Monaco', 'Consolas', 'Lucida Console',
+    'DejaVu Sans Mono', 'Courier New', monospace;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  /* Dark Theme (Default) */
+  --primary-color: #0a0a0a;
+  --secondary-color: #ffffff;
+  --tertiary-color: #888888;
+  --light-slate: #e2e2e2;
+  --slate: #a0a0a0;
+  --dark-slate: #333333;
+  --card-bg-color: #1a1a1a;
+  color-scheme: dark;
+}
+
+body[data-theme='light'] {
+  --primary-color: #f8f9fa;
+  --secondary-color: #0d6efd;
+  --tertiary-color: #6c757d;
+  --light-slate: #212529;
+  --slate: #495057;
+  --dark-slate: #dee2e6;
+  --card-bg-color: #ffffff;
+  color-scheme: light;
+}
+
+/* === Basic Reset & Global Styles === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--primary-color);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--primary-color);
+  color: var(--slate);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--light-slate);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  filter: brightness(0.8);
+  outline: none;
+}
+
+section {
+  padding: 100px 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* A simple fade-in-up animation for sections */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the animation for each section for a nice effect */
+section:nth-of-type(1) { animation-delay: 0.1s; }
+section:nth-of-type(2) { animation-delay: 0.2s; }
+section:nth-of-type(3) { animation-delay: 0.3s; }
+section:nth-of-type(4) { animation-delay: 0.4s; }
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: clamp(28px, 5vw, 40px);
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  color: var(--light-slate);
+}
+
+.section-heading::after {
+  display: none;
+}
+
+/* === Media Queries for Responsiveness === */
+@media (max-width: 768px) {
+  section {
+    padding: 80px 15px;
+  }
+}

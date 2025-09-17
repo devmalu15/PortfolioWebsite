@@ -1,0 +1,99 @@
+[data-theme='light'] .header {
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 25px;
+  background-color: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  transition: var(--transition);
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.logo a {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--light-slate);
+  transition: var(--transition);
+}
+
+.logo a:hover {
+  color: var(--secondary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--font-mono);
+}
+
+.nav-links a {
+  color: var(--light-slate);
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Make the CTA button selector more specific to override the general nav-links a style */
+.nav-links a.cta-button {
+  font-family: var(--font-mono);
+  color: var(--light-slate);
+  border: 1px solid var(--light-slate);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.nav-links a.cta-button:hover {
+  background-color: var(--light-slate);
+  color: var(--primary-color);
+  transform: translateY(0); /* Override the nav-links hover effect */
+  text-shadow: none; /* Ensure no text-shadow on hover */
+}
+
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.theme-toggle-button:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .header nav {
+    justify-content: center;
+  }
+}
