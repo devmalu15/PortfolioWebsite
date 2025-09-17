@@ -90,10 +90,16 @@
 }
 
 @media (max-width: 768px) {
-  .nav-links {
+  .nav-links li:not(:nth-child(4)) { /* Hide all but the 4th li (theme toggle) */
     display: none;
   }
   .header nav {
-    justify-content: center;
+    justify-content: space-between;
+  }
+  .logo {
+    flex-grow: 1;
+  }
+  .nav-links {
+    justify-content: flex-end;
   }
 }
