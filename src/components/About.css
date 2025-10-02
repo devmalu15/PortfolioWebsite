@@ -10,7 +10,8 @@
   margin-bottom: 15px;
 }
 
-/* This rule is no longer used in the About component, but keeping it does no harm. */
+
+
 .skills-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
