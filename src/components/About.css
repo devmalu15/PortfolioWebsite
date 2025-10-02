@@ -80,7 +80,6 @@
   mix-blend-mode: normal;
 }
 
-
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
