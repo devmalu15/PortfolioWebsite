@@ -15,7 +15,7 @@ const About = () => {
         <div className="about-image">
           <div className="image-wrapper">
             {/* Replace with your own image */}
-            <img src="https://via.placeholder.com/300" alt="Your Name" />
+            <img src="my-portfolio\public\picForPortfolio.png" alt="Your Name" />
           </div>
         </div>
       </div>
