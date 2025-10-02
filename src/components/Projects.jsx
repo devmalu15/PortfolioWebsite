@@ -39,9 +39,9 @@ const projectsData = [
         github: 'https://github.com/devmalu15/GeminiAppB',
     },
     {
-        title: 'Customer Segmentation Analysis to Improve Conversion ',
+        title: 'CSAIC SQL Script',
         dates: 'June 2024',
-        description: 'A Script written in sql on postgresql dataset to improve customer conversion rate for a company.',
+        description: '"Customer Segmentation Analysis to Improve Conversion", is a script written in sql on postgresql dataset to improve customer conversion rate for a company.',
         tags: [
             { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
             { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' },
