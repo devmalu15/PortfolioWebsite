@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className="about-image">
           <div className="image-wrapper">
-            {/* Replace with your own image */}
+            {/*  */}
             <img src="/picForPortfolio.png" alt="Your Name" />
           </div>
         </div>
