@@ -39,16 +39,16 @@ const projectsData = [
         github: 'https://github.com/devmalu15/GeminiAppB',
     },
     {
-        title: 'Project Three',
-        dates: 'Jul 2023 - Present',
-        description: 'A corporate website redesign that increased user engagement by 40%. Focused on accessibility and modern design principles.',
+        title: 'Customer Segmentation Analysis to Improve Conversion ',
+        dates: 'June 2024',
+        description: 'A Script written in sql on postgresql dataset to improve customer conversion rate for a company.',
         tags: [
-            { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-            { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-            { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' },
+            { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+            { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' },
+            { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' }
         ],
         link: '#',
-        github: '#',
+        github: 'https://github.com/devmalu15/csaic-jovac',
     },
 ];
 
